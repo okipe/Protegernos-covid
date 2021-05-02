@@ -1,0 +1,289 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+  margin: auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+/*-----Cabecera-----*/
+
+header{
+  background-color: #ffffff;
+  height: 180px;
+  width: 100%;
+}
+
+.logo{
+  padding: 25px;
+}
+
+.logo svg{
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 470px;
+  margin: auto;
+}
+
+.menu a{
+  color: #3b466e;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+
+.menu a:hover{
+    color: #5e2df8;
+}
+
+@media all and (min-width:1080px){
+
+.logo{
+  left: 30px;
+  padding: 50px;
+  position: absolute;
+}
+
+.menu{
+  padding-top: 80px;
+  position: absolute;
+  right: 90px;
+  width: 500px;
+}
+
+}
+
+/*Banner principal*/
+
+.banner{
+  padding-bottom: 40px;
+}
+
+.banner > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.llamada-accion{
+  max-width: 400px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.llamada-accion h1{
+  color: #5e2df8;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.llamada-accion h2{
+  color: #3b466e;
+  font-size: 35px;
+  padding-top: 0px;
+}
+
+/*botón*/
+.llamada-accion a{
+  background-color: #fd5c49;
+  border-radius: 25px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 35px;
+  padding: 10px 50px;
+  transition: all 0.5s linear;
+}
+
+.llamada-accion a:hover{
+    background-color: #5e2df8;
+}
+
+.banner > .contenedor p{
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.foto-mujer{
+  max-width: 480px;
+  width: 100%;
+}
+
+.foto-mujer img{
+  width: 100%;
+}
+
+/*de 1016px para abajo se corre los elementos*/
+
+@media all and (min-width: 700px){
+
+  .banner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  }
+
+  .llamada-accion{
+  margin: 30px;
+  max-width: 400px;
+  padding-right: 30px;
+  text-align: left;
+  }
+
+  .foto-mujer{
+  padding-left: 30px;
+  margin: 30px;
+  }
+  }
+
+
+/*podría faltar un media query para los tamaños intermedios*/
+
+.bienvenida{
+  background-color: #5e2df8;
+  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.bienvenida > .contenedor{
+    max-width: 950px;
+}
+
+.bienvenida p{
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.bienvenida h2{
+  color: white;
+  font-size: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+/*Cómo protegerte*/
+
+.como-protegerte{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.como-protegerte .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.como-protegerte .proteccion{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.como-protegerte .proteccion h2{
+  color: #5e2df8;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.como-protegerte .proteccion p{
+  font-size: 20px;
+}
+
+
+/*Qué hacer si me infecté*/
+
+.infectado {
+  background-color: #fd5c49;
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.infectado .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.infectado .si-me-infecte{
+  width: 900px;
+}
+
+.infectado .si-me-infecte h2{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.infectado .contacta a{
+  background-color: #5e2df8;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 50px;
+  margin-top: 100px;
+  transition: all 0.5s linear;
+}
+
+.infectado .contacta a:hover{
+  background-color: #3b466e;
+}
+
+@media all and (min-width: 1313px){
+  .infectado .si-me-infecte h2{
+    text-align: left;
+  }
+}
+
+.footer-home{
+  background-color: #3b466e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-home p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
